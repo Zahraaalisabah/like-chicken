@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<title>لايك چكن | Like Chicken</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+    <img src="image/logo.png" alt="Like Chicken Logo">
+    <span>لايك جكن</span>
+</div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#menu">المنيو</a>
+        <a href="#branches">الفروع</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <a href="https://wa.me/9647725558209" class="order-btn">
+        اطلب الآن
+    </a>
+
+</header>
+
+<!-- Hero -->
+
+
+
+<section class="hero" id="home">
+
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="image/food.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>أشهى وجبات الدجاج في بغداد</h1>
+
+        <p>
+            بركر - كنتاكي - شاورما - بيتزا - كرسبي
+            بأفضل الأسعار
+        </p>
+
+        <a href="#menu" class="btn">
+            عرض المنيو
+        </a>
+
+    </div>
+
+</section>
+
+<section class="categories">
+
+    <div class="menu-header">
+        <h2>المنيو</h2>
+        <p>أشهى الوجبات بأفضل الأسعار</p>
+    </div>
+
+    <!-- الوجبات -->
+<h3 class="section-title">🍗 الوجبات</h3>
+
+<div class="swiper foodSwiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide category-item" data-target="appetizer-card">
+            <img src="image/test.png">
+            <span>المقبلات</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="kentucky-card">
+            <img src="image/kentucky.png">
+            <span>الكنتاكي</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="crispy-card">
+            <img src="image/crispy3.png">
+            <span>الكرسبي</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="burger-card">
+            <img src="image/burger.png">
+            <span>البركر</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="shawarma-card">
+            <img src="image/shawarma.png">
+            <span>الشاورما</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="rizo-card">
+            <img src="image/rizo.png">
+            <span>الريزو</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="snack-card">
+            <img src="image/snack.png">
+            <span>السناك</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="fried-card">
+            <img src="image/fried.png">
+            <span>دجاج مقرمش</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="pizza-card">
+            <img src="image/pizza.png">
+            <span>الإيطالي</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="finger-card">
+            <img src="image/finger.png">
+            <span>الفنكر</span>
+        </div>
+
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<h3 class="section-title">🍹 المشروبات والحلويات</h3>
+
+<div class="swiper drinkSwiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide category-item" data-target="waffle-card">
+            <img src="image/waffle.png">
+            <span>الوافل</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="pancake-card">
+            <img src="image/pancake.png">
+            <span>البان كيك</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="crepe-card">
+            <img src="image/crepe.jpg">
+            <span>الكريب</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="fruits-card">
+            <img src="image/fruits.png">
+            <span>الفواكه</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="icecream-card">
+            <img src="image/icecream.png">
+            <span>آيس كريم</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="coffee-card">
+            <img src="image/coffee.png">
+            <span>القهوة</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="milkshake-card">
+            <img src="image/milkshake.png">
+            <span>ميلك شيك</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="juice-card">
+            <img src="image/juice.jpg">
+            <span>العصائر</span>
+        </div>
+
+        <div class="swiper-slide category-item" data-target="mojito-card">
+            <img src="image/mojito.png">
+            <span>الموهيتو</span>
+        </div>
+
+    </div>
+</div>
+
+</section>
+<!-- Menu -->
+
+<section id="menu">
+
+    <h2>جميع الأقسام</h2>
+
+    <div class="menu-categories-grid">
+
+        <div class="category-card" id="kentucky-card" onclick="openMenu('kentucky')">
+            <img src="image/kentucky.png">
+            <h3>الكنتاكي</h3>
+            <p>8 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <div class="category-card" id="crispy-card" onclick="openMenu('crispy')">
+            <img src="image/crispy3.png">
+            <h3>الكرسبي</h3>
+            <p>4 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <div class="category-card" id="fried-card" onclick="openMenu('fried')">
+            <img src="image/fried.png">
+            <h3>دجاج مقرمش</h3>
+            <p>3 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <div class="category-card" id="burger-card" onclick="openMenu('burger')">
+            <img src="image/burger.png">
+            <h3>البركر</h3>
+            <p>11 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <div class="category-card" id="snack-card" onclick="openMenu('snack')">
+            <img src="image/snack.png">
+            <h3>السناك</h3>
+            <p>11 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <div class="category-card" id="shawarma-card" onclick="openMenu('shawarma')">
+            <img src="image/shawarma.png">
+            <h3>الشاورما</h3>
+            <p>8 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <div class="category-card" id="rizo-card" onclick="openMenu('rizo')">
+            <img src="image/rizo.png">
+            <h3>الريزو</h3>
+            <p>12 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <div class="category-card" id="pizza-card" onclick="openMenu('pizza')">
+            <img src="image/pizza.png">
+            <h3>الإيطالي</h3>
+            <p>13 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <div class="category-card" id="finger-card" onclick="openMenu('finger')">
+            <img src="image/finger.png">
+            <h3>الفنكر</h3>
+            <p>10 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <div class="category-card" id="appetizer-card" onclick="openMenu('appetizer')">
+            <img src="image/test.png">
+            <h3>المقبلات</h3>
+            <p>8 أنواع</p>
+            <button>عرض الأنواع</button>
+        </div>
+
+        <!-- الوافل -->
+
+<div class="category-card" id="waffle-card" onclick="openMenu('waffle')">
+    <img src="image/waffle.png">
+    <h3>الوافل</h3>
+    <p>10 أنواع</p>
+    <button>عرض الأنواع</button>
+</div>
+
+<!-- البان كيك -->
+
+<div class="category-card" id="pancake-card" onclick="openMenu('pancake')">
+    <img src="image/pancake.png">
+    <h3>البان كيك</h3>
+    <p>10 أنواع</p>
+    <button>عرض الأنواع</button>
+</div>
+
+<!-- الفواكه -->
+
+<div class="category-card" id="fruits-card" onclick="openMenu('fruits')">
+    <img src="image/fruits.png">
+    <h3>الفواكه</h3>
+    <p>2 أنواع</p>
+    <button>عرض الأنواع</button>
+</div>
+
+<!-- آيس كريم -->
+
+<div class="category-card" id="icecream-card" onclick="openMenu('icecream')">
+    <img src="image/icecream.png">
+    <h3>آيس كريم</h3>
+    <p>4 أنواع</p>
+    <button>عرض الأنواع</button>
+</div>
+
+<!-- القهوة -->
+
+<div class="category-card" id="coffee-card" onclick="openMenu('coffee')">
+    <img src="image/coffee.png">
+    <h3>القهوة</h3>
+    <p>2 أنواع</p>
+    <button>عرض الأنواع</button>
+</div>
+
+<!-- الكريب -->
+
+<div class="category-card" id="crepe-card" onclick="openMenu('crepe')">
+    <img src="image/crepe.jpg">
+    <h3>الكريب</h3>
+    <p>17 أنواع</p>
+    <button>عرض الأنواع</button>
+</div>
+
+<!-- الميلك شيك -->
+
+<div class="category-card" id="milkshake-card" onclick="openMenu('milkshake')">
+    <img src="image/milkshake.png">
+    <h3>الميلك شيك</h3>
+    <p>8 أنواع</p>
+    <button>عرض الأنواع</button>
+</div>
+
+<!-- العصائر -->
+
+<div class="category-card" id="juice-card" onclick="openMenu('juice')">
+    <img src="image/juice.jpg">
+    <h3>العصائر</h3>
+    <p>13 أنواع</p>
+    <button>عرض الأنواع</button>
+</div>
+
+<!-- الموهيتو -->
+
+<div class="category-card" id="mojito-card" onclick="openMenu('mojito')">
+    <img src="image/mojito.png">
+    <h3>الموهيتو</h3>
+    <p>9 أنواع</p>
+    <button>عرض الأنواع</button>
+</div>
+
+    </div>
+
+</section>
+
+
+
+
+    
+
+        <div class="branch">
+            <P>فرعنا</P>
+
+            <h3>شهداء العبيدي</h3>
+            <p>07712362343</p>
+            <p>07725558209</p>
+            <p>07721044443</p>
+            <p>07821044443</p>
+
+        </div>
+
+</section>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.344827833815!2d44.51076242450307!3d33.36206247342469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15579b1306c8e349%3A0x9ac330bdc3b5b948!2z2YXYt9i52YUg2YTYp9mK2YMg2KzZg9mG!5e0!3m2!1sar!2siq!4v1780410418942!5m2!1sar!2siq"
+width="100%"
+height="350"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<!-- Popup -->
+
+<div id="menuPopup" class="menu-popup">
+
+    <div class="popup-box">
+
+        <span class="close-btn"
+        onclick="closeMenu()">
+
+            ×
+
+        </span>
+
+        <h2 id="popupTitle"></h2>
+
+        <div id="popupContent"></div>
+
+    </div>
+
+</div>
+
+<section class="why">
+  <h2>ليش Like Chicken؟</h2>
+
+<div class="why-grid">
+
+    <div>
+        <i class="fas fa-drumstick-bite"></i>
+        <p>دجاج طازج يومياً</p>
+    </div>
+
+    <div>
+        <i class="fas fa-motorcycle"></i>
+        <p>توصيل سريع</p>
+    </div>
+
+    <div>
+        <i class="fas fa-fire"></i>
+        <p>دجاج طازج يوميًا</p>
+    </div>
+
+    <div>
+        <i class="fas fa-tags"></i>
+        <p>أسعار منافسة</p>
+    </div>
+
+    <div>
+        <i class="fas fa-glass-cheers"></i>
+        <p>مشروبات مجانية مع بعض الوجبات</p>
+    </div>
+
+    <div>
+        <i class="fas fa-users"></i>
+        <p>أكثر من 50 ألف طلب</p>
+    </div>
+
+    <div>
+        <i class="fas fa-shield-alt"></i>
+        <p>جودة مضمونة</p>
+    </div>
+
+</div>
+</section>
+
+<section class="reviews">
+  <h2>آراء الزبائن</h2>
+
+  <div class="review-card">
+    <p>أفضل بركر جربته في بغداد</p>
+    <span> أحمد</span>
+    <p>⭐⭐⭐⭐⭐
+أفضل كنتاكي ببغداد</p>
+    <span> حسين علاء</span>
+
+<p>⭐⭐⭐⭐⭐
+  التوصيل سريع جداً
+</p>
+    <span>  ياسين</span>
+
+    <p>⭐⭐⭐⭐⭐
+ الأسعار ممتازة</p>
+    <span>  همام</span>
+
+  </div>
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<section id="contact">
+
+    <h2>تواصل معنا</h2>
+
+    <p class="contact-text">
+        نحن جاهزون لاستقبال طلباتكم واستفساراتكم على مدار اليوم
+    </p>
+
+    <div class="contact-grid">
+
+        <a href="tel:07712362343" class="contact-card">
+            <i class="fas fa-phone"></i>
+            <h3>اتصال مباشر</h3>
+            <span>07725558209</span>
+        </a>
+
+       <a href="https://wa.me/9647725558209" class="contact-card">
+    <i class="fab fa-whatsapp"></i>
+    <h3>واتساب</h3>
+    <span>اطلب الآن</span>
+</a>
+
+        <a href="https://www.facebook.com/share/1BYgVac25h/?mibextid=wwXIfr" class="contact-card">
+            <i class="fab fa-facebook-f"></i>
+            <h3>فيسبوك</h3>
+            <span>تابعنا</span>
+        </a>
+
+        <a href="https://www.instagram.com/likechicken2021?utm_source=qr" class="contact-card">
+            <i class="fab fa-instagram"></i>
+            <h3>انستغرام</h3>
+            <span>likechicken2021</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        <img src="image/logo.png" alt="Like Chicken">
+        <h3>LIKE CHICKEN</h3>
+    </div>
+
+    <p>
+        أشهى وجبات الدجاج والبركر والكرسبي في بغداد
+    </p>
+
+    <div class="footer-social">
+
+        <a href="https://www.facebook.com/share/1BYgVac25h/?mibextid=wwXIfr">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/likechicken2021?utm_source=qr">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@likechl?_r=1&_t=ZS-96k6yHlDSPX">
+            <i class="fab fa-tiktok"></i>
+        </a>
+
+        <a href="https://wa.me/9647725558209">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+    <div class="footer-info">
+        <span>🕒 يومياً من 10 صباحاً حتى 4 ليلاً</span>
+    </div>
+
+   <div class="footer-copy">
+🍗 شكراً لثقتكم بـ Like Chicken
+<br>
+ننتظركم دائماً لتجربة ألذ الوجبات
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
