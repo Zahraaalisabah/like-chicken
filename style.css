@@ -797,3 +797,223 @@ transform:translateY(-10px) scale(1.03);
     border:2px solid #ff7900 !important;
     box-shadow:0 0 30px rgba(255,121,0,.7) !important;
 }
+
+/* ==========================================
+   التعديلات الأساسية والاستجابة لجميع الشاشات
+   ========================================== */
+
+/* تحسين السلوك العام واتجاه النص للعربية */
+html {
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+/* إصلاح التفاعل مع الشاشات اللمسية وتقليل الحواف لعدم حدوث التمرير الأفقي */
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------
+   1. الشاشات الكبيرة جداً (Desktops / 1200px+)
+   ------------------------------------------ */
+@media (max-width: 1200px) {
+  header {
+    padding: 15px 4%;
+  }
+  
+  section {
+    padding: 80px 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+  
+  .hero-image img {
+    width: 400px;
+  }
+}
+
+/* ------------------------------------------
+   2. الأجهزة اللوحية (Tablets / 992px)
+   ------------------------------------------ */
+@media (max-width: 992px) {
+  header {
+    padding: 15px 5%;
+  }
+
+  /* تحويل الهيدر والتنقل إلى وضع عمودي/مرن */
+  nav {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 15px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-image img {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .menu-header h2 {
+    font-size: 40px;
+  }
+}
+
+/* ------------------------------------------
+   3. الهواتف الذكية والكبيرة (Mobile / 768px)
+   ------------------------------------------ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .order-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-image img {
+    width: 250px;
+  }
+
+  /* تعديل شبكات العرض لتناسب الشاشات الصغيرة */
+  .menu-grid, 
+  .branches-grid, 
+  .contact-grid, 
+  .why-grid, 
+  .menu-categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  /* تحسين شريط الأقسام */
+  .category-slider {
+    gap: 10px;
+    padding: 15px 10px;
+  }
+
+  .category-item {
+    width: 85px;
+    padding: 5px;
+  }
+
+  .category-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .category-item span {
+    font-size: 13px;
+  }
+
+  /* تحسين النافذة المنبثقة (Popup) للهاتف */
+  .popup-box {
+    padding: 20px 15px;
+    max-height: 90vh;
+  }
+
+  #popupTitle {
+    font-size: 22px;
+  }
+
+  .popup-meal {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .popup-whatsapp {
+    width: 100%;
+    text-align: center;
+  }
+
+  .close-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
+  }
+}
+
+/* ------------------------------------------
+   4. الهواتف الصغيرة جداً (Small Mobile / 480px)
+   ------------------------------------------ */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-image img {
+    width: 200px;
+  }
+
+  .menu-grid, 
+  .branches-grid, 
+  .contact-grid, 
+  .why-grid, 
+  .menu-categories-grid {
+    grid-template-columns: 1fr; /* عنصر واحد في كل سطر */
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
